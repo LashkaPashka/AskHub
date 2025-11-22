@@ -209,7 +209,7 @@ API будет доступен по адресу: `http://localhost:8080`
 
 **Responses:**
 
--   `200`: `Question was deleted successfully!`
+-   `200`: `Answer was deleted successfully!`
 -   `400`: `Invalid request. Please check the submitted data.`
 -   `500`: `Internal server error`
 
