@@ -198,7 +198,7 @@ API будет доступен по адресу: `http://localhost:8080`
 
 ### 3️⃣ Удалить ответ
 
-`GET /answers/{id}`
+`DELETE /answers/{id}`
 
 Удаляет ответ.
 
