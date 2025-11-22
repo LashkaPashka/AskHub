@@ -217,7 +217,7 @@ API будет доступен по адресу: `http://localhost:8080`
 ```json
 {
   *gorm.Model
-	Text string `gorm:"type:text;not null" json:"text"`
+  Text string `gorm:"type:text;not null" json:"text"`
 }
 ```
 
@@ -225,9 +225,9 @@ API будет доступен по адресу: `http://localhost:8080`
 ```json
 {
   *gorm.Model
-	QuestionID uint   `gorm:"not null" json:"question_id"`
-	UserID     string `gorm:"type:uuid;not null" json:"user_id"`
-	Text       string `gorm:"type:text;not null" json:"text"`
+  QuestionID uint   `gorm:"not null" json:"question_id"`
+  UserID     string `gorm:"type:uuid;not null" json:"user_id"`
+  Text       string `gorm:"type:text;not null" json:"text"`
 }
 ```
 
