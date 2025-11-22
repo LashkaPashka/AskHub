@@ -103,7 +103,7 @@ func (s *Storage) GetAll() ([]model.Question, error) {
 func (s *Storage) Delete(ID uint) (bool, error) {
 	const op = "Question.storage.delete"
 
-	result := s.pool.DB.Table("questions").Delete(&model.Question{}, ID)
+	result := s.pool.DB.Unscoped().Delete(&model.Question{}, ID)
 	if result.Error != nil {
 		s.logger.Error("failed to delete question",
 			slog.String("op", op),

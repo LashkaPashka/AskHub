@@ -4,7 +4,6 @@ CREATE TABLE questions (
     text TEXT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMP NULL,
-    deleted_at TIMESTAMP NULL
 );
 
 CREATE TABLE answers (

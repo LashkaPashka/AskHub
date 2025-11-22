@@ -1,10 +1,15 @@
 package model
 
 import (
-	"gorm.io/gorm"
+	"time"
+
+	"github.com/LashkaPashka/AskHub/internal/Answer/model"
 )
 
 type Question struct {
-	*gorm.Model
-	Text string `gorm:"type:text;not null" json:"text"`
+	ID        uint      `gorm:"primaryKey"`
+    Text      string    `gorm:"type:text;not null"`
+    Answers   []model.Answer  `gorm:"constraint:OnDelete:CASCADE;"`
+    CreatedAt time.Time
+    UpdatedAt *time.Time
 }
