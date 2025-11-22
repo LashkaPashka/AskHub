@@ -145,6 +145,8 @@ API будет доступен по адресу: `http://localhost:8080`
 ### 4️⃣ Удалить вопрос
 `DELETE /questions/{id}`
 
+Удаляет вопрос вместе со всеми связанными ответами.
+
 **Responses:**
 
 -   `200`: `Question was deleted successfully!`
