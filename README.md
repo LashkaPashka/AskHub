@@ -91,7 +91,7 @@ API будет доступен по адресу: `http://localhost:8080`
 -   `400`: `Invalid request. Please check the submitted data.`
 -   `500`: `Internal server error`
 
-### 2️⃣ Получить вопросы
+### 2️⃣ Получить вопрос
 
 `GET /questions/{id}`
 
