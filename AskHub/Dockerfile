@@ -28,5 +28,3 @@ COPY --from=builder /app/bin/goose ./goose
 COPY --from=builder /app/entrypoint.sh ./entrypoint.sh
 
 CMD ["/app/entrypoint.sh"]
-
-#CMD ["tail", "-f", "/dev/null"]
