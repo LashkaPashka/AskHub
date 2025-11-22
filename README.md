@@ -25,11 +25,11 @@
 2.  Настройте переменные окружения для `docker-compose.yaml` в `.env`:
 
     ```env
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_USER=postgres
-    DB_PASSWORD=root
-    DB_NAME=askhub
+    CONTAINER_NAME=app
+    POSTGRES_DB=askhub
+	POSTGRES_USER=postgres
+	POSTGRES_PASSWORD=root
+	PGDATA=/var/lib/postgresql/data
     ```
 
 3. Настройте конфиг приложения в `./AskHub/config/prod.yaml`:
