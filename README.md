@@ -236,7 +236,8 @@ API будет доступен по адресу: `http://localhost:8080`
 ## ⚡ Технологии
 
 -   Go (Golang)
+-   Работа с БД через GORM.
 -   PostgreSQL
 -   Docker & Docker Compose
 -   goose (миграции)
--   testing (тестирование)
+-   логгирование, тесты (slog/testing)
