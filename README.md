@@ -216,9 +216,9 @@ API будет доступен по адресу: `http://localhost:8080`
 
 ```
 {
-  ID        uint      `gorm:"primaryKey"`
-  Text      string    `gorm:"type:text;not null"`
-  Answers   []model.Answer  `gorm:"constraint:OnDelete:CASCADE;"`
+  ID        uint           `gorm:"primaryKey"`
+  Text      string         `gorm:"type:text;not null"`
+  Answers   []model.Answer `gorm:"constraint:OnDelete:CASCADE;"`
   CreatedAt time.Time
   UpdatedAt *time.Time
 }
