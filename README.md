@@ -22,7 +22,7 @@
     cd AskHub
     ```
 
-2.  Настройте переменные окружения в `.env`:
+2.  Настройте переменные окружения для `docker-compose.yaml` в `.env`:
 
     ```env
     DB_HOST=localhost
